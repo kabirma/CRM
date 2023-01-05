@@ -93,6 +93,8 @@
                     @endforeach
                     <!--/#users list-->
                 </select>
+                
+                <input type="hidden" name="assigned[]" value="{{auth()->id()}}">
             </div>
         </div>
         @endif
@@ -262,7 +264,7 @@
 
         <!--CUSTOMER FIELDS [collapsed]-->
         @if(config('system.settings_customfields_display_leads') == 'toggled')
-        <div class="spacer row">
+        <div class="spacer row" style="display: none">
             <div class="col-sm-12 col-lg-8">
                 <span class="title">{{ cleanLang(__('lang.more_information')) }}</span class="title">
             </div>

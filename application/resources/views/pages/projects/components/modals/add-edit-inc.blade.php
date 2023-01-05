@@ -472,20 +472,20 @@
 
             <!--TEAM PERMISSIONS-->
             @if(config('visibility.project_modal_project_permissions'))
-            <div class="spacer row">
-                <div class="col-sm-8">
-                    <span class="title">{{ cleanLang(__('lang.assigned_user_permissions')) }}</span>
-                </div>
-                <div class="col-sm-4">
-                    <div class="switch  text-right">
-                        <label>
-                            <input type="checkbox" name="show_more_settings_projects" id="show_more_settings_projects"
-                                class="js-switch-toggle-hidden-content" data-target="edit_project_assigned_permissions">
-                            <span class="lever switch-col-light-blue"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="spacer row" style="display: none">--}}
+{{--                <div class="col-sm-8">--}}
+{{--                    <span class="title">{{ cleanLang(__('lang.assigned_user_permissions')) }}</span>--}}
+{{--                </div>--}}
+{{--                <div class="col-sm-4">--}}
+{{--                    <div class="switch  text-right">--}}
+{{--                        <label>--}}
+{{--                            <input type="checkbox" name="show_more_settings_projects" id="show_more_settings_projects"--}}
+{{--                                class="js-switch-toggle-hidden-content" data-target="edit_project_assigned_permissions">--}}
+{{--                            <span class="lever switch-col-light-blue"></span>--}}
+{{--                        </label>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <!--spacer-->
             <!--option toggle-->
             <div class="hidden highlighted-panel" id="edit_project_assigned_permissions">

@@ -160,6 +160,19 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-dark font-22 p-t-10 p-r-10 js-toggle-notifications-panel"
+                       href="{{ url('home') }}" data-url=""
+                   
+                       data-progress-bar='hidden' aria-expanded="false">
+                        <i class="ti-home"></i>
+                        <div class="notify"
+                             id="topnav-notification-icon">
+                            <span class="heartbit"></span>
+                            <span class="point"></span>
+                        </div>
+                    </a>
+                </li>
                 <!--notifications -->
 
                 <!-- record time -->
